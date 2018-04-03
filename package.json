@@ -10,7 +10,8 @@
     "material-ui": "^1.0.0-beta.40",
     "material-ui-icons": "^1.0.0-beta.36",
     "normalize.css": "^8.0.0",
-    "react-helmet": "^5.2.0"
+    "react-helmet": "^5.2.0",
+    "react-image-lightbox": "^4.6.0"
   },
   "keywords": [
     "gatsby"

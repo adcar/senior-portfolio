@@ -59,7 +59,6 @@ class Header extends Component {
     this.handleDrawerToggle = this.handleDrawerToggle.bind(this)
   }
   handleDrawerToggle() {
-    console.log('toggled')
     this.setState({
       isOpen: !this.state.isOpen
     })
@@ -123,31 +122,24 @@ class Header extends Component {
               </Typography>
             </Link>
             <div className={classes.links}>
-              <Button color="inherit">
-                <Link to="/resume" className={classes.link}>
-                  Resume
-                </Link>
-              </Button>
-              <Button color="inherit">
-                <Link to="/best-works" className={classes.link}>
-                  Best Works
-                </Link>
-              </Button>
-              <Button color="inherit">
-                <Link to="/letters-of-recommendation" className={classes.link}>
-                  Recommendations
-                </Link>
-              </Button>
-              <Button color="inherit">
-                <Link to="/community-service" className={classes.link}>
-                  Community Service
-                </Link>
-              </Button>
-              <Button color="inherit">
-                <Link to="/awards" className={classes.link}>
-                  Awards
-                </Link>
-              </Button>
+              <Link to="/resume" className={classes.link}>
+                <Button color="inherit">Resume</Button>
+              </Link>
+              <Link to="/best-works" className={classes.link}>
+                <Button color="inherit">Best Works</Button>
+              </Link>
+
+              <Link to="/letters-of-recommendation" className={classes.link}>
+                <Button color="inherit">Recommendations</Button>
+              </Link>
+
+              <Link to="/community-service" className={classes.link}>
+                <Button color="inherit">Community Service</Button>
+              </Link>
+
+              <Link to="/awards" className={classes.link}>
+                <Button color="inherit">Awards</Button>
+              </Link>
             </div>
           </Toolbar>
         </AppBar>

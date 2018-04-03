@@ -3,6 +3,7 @@ import Link from 'gatsby-link'
 import Card from '../components/Card'
 import portfolioFromScratch from '../img/portfolio-from-scratch.png'
 import { withStyles } from 'material-ui/styles'
+import Typography from 'material-ui/Typography'
 
 const style = theme => ({
   cardContainer: {
@@ -12,6 +13,10 @@ const style = theme => ({
     marginLeft: 'auto',
     marginRight: 'auto'
   },
+  wrapper: {
+    paddingTop: theme.spacing.unit * 3,
+    padddingBottom: theme.spacing.unit * 3
+  },
   card: {
     margin: theme.spacing.unit,
     width: 290
@@ -19,8 +24,10 @@ const style = theme => ({
 })
 
 const BestWorks = props => (
-  <div>
-    <h1>My best works!</h1>
+  <div className={props.classes.wrapper}>
+    <Typography component="h1" variant="display2" align="center" gutterBottom>
+      Best Works
+    </Typography>
     <div className={props.classes.cardContainer}>
       <Card
         className={props.classes.card}
