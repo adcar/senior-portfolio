@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import ResumeComponent from '../components/Resume'
 import Card, { CardContent } from 'material-ui/Card'
@@ -62,5 +63,9 @@ const Resume = props => (
     </Card>
   </div>
 )
+
+Resume.propTypes = {
+  classes: PropTypes.object.isRequired
+}
 
 export default withStyles(styles)(Resume)

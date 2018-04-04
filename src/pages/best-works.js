@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import Card from '../components/Card'
 import portfolioFromScratch from '../img/portfolio-from-scratch.png'
@@ -54,4 +55,7 @@ const BestWorks = props => (
   </div>
 )
 
+BestWorks.propTypes = {
+  classes: PropTypes.object.isRequired
+}
 export default withStyles(style)(BestWorks)

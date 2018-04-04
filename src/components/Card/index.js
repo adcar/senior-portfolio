@@ -40,7 +40,11 @@ function SimpleMediaCard(props) {
 }
 
 SimpleMediaCard.propTypes = {
-  classes: PropTypes.object.isRequired
+  classes: PropTypes.object.isRequired,
+  className: PropTypes.string,
+  media: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  link: PropTypes.string.isRequired
 }
 
 export default withStyles(styles)(SimpleMediaCard)

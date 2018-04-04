@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import Typography from 'material-ui/Typography'
 import Card, { CardContent, CardMedia } from 'material-ui/Card'
@@ -74,4 +75,7 @@ const Awards = props => (
   </div>
 )
 
+Awards.propTypes = {
+  classes: PropTypes.object.isRequired
+}
 export default withStyles(styles)(Awards)

@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import { withStyles } from 'material-ui/styles'
 import Typography from 'material-ui/Typography'
@@ -108,5 +109,9 @@ const CommunityService = props => (
     <br />
   </div>
 )
+
+CommunityService.propTypes = {
+  classes: PropTypes.object.isRequired
+}
 
 export default withStyles(styles)(CommunityService)

@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import Typography from 'material-ui/Typography'
 import { withStyles } from 'material-ui/styles'
 import Link from 'gatsby-link'
@@ -96,4 +97,7 @@ const PortfolioFromScratch = props => (
   </div>
 )
 
+PortfolioFromScratch.propTypes = {
+  classes: PropTypes.object.isRequired
+}
 export default withStyles(styles)(PortfolioFromScratch)
