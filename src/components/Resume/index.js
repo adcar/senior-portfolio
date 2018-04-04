@@ -59,9 +59,20 @@ const styles = theme => ({
     textTransform: 'uppercase'
   },
   profilePhoto: {
+    boxShadow: theme.shadows[7],
     height: 200,
     borderRadius: '50%',
-    marginBottom: theme.spacing.unit
+    marginBottom: theme.spacing.unit * 3,
+    '&:before': {
+      content: '""',
+      position: 'absolute',
+      bottom: 0,
+      left: 50,
+      width: '100%',
+      height: '1rem',
+      display: 'block',
+      background: 'red'
+    }
   },
   sidebarInfo: {
     marginTop: theme.spacing.unit * 2,

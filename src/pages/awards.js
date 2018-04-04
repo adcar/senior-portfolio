@@ -5,8 +5,8 @@ import Typography from 'material-ui/Typography'
 import Card, { CardContent, CardMedia } from 'material-ui/Card'
 import { withStyles } from 'material-ui/styles'
 import nths from '../img/nths.jpg'
-import vermontSkills from '../img/vermontSkillsusa.jpg'
-import nationalSkills from '../img/nationalSkillsusa.jpg'
+import vermontSkills from '../img/skillsVermont.jpg'
+import nationalSkills from '../img/skillsChampion.jpg'
 
 const styles = theme => ({
   cardContainer: {
