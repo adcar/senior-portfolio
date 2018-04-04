@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "Senior Portfolio",
+  "description": "Senior portfolio project. Built with GatsbyJS",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Alexander Cardosi <alexanderdcardosi@gmail.com>",
   "dependencies": {
     "gatsby": "^1.9.243",
     "gatsby-link": "^1.6.40",
@@ -13,9 +13,7 @@
     "react-helmet": "^5.2.0",
     "react-image-lightbox": "^4.6.0"
   },
-  "keywords": [
-    "gatsby"
-  ],
+  "keywords": ["gatsby"],
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",

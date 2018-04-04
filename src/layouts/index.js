@@ -10,8 +10,8 @@ import teal from 'material-ui/colors/teal'
 
 const theme = createMuiTheme({
   palette: {
-    primary: teal,
-  },
+    primary: teal
+  }
 })
 
 const TemplateWrapper = ({ children }) => (
@@ -22,7 +22,7 @@ const TemplateWrapper = ({ children }) => (
         title="Senior Portfolio"
         meta={[
           { name: 'description', content: 'Senior Portfolio' },
-          { name: 'keywords', content: 'school, portfolio' },
+          { name: 'keywords', content: 'school, portfolio' }
         ]}
       />
       <Header />
@@ -31,7 +31,7 @@ const TemplateWrapper = ({ children }) => (
           margin: '0 auto',
           maxWidth: 960,
           padding: '0px 1.0875rem 1.45rem',
-          paddingTop: 0,
+          paddingTop: 0
         }}
       >
         {children()}
@@ -41,7 +41,7 @@ const TemplateWrapper = ({ children }) => (
 )
 
 TemplateWrapper.propTypes = {
-  children: PropTypes.func,
+  children: PropTypes.func
 }
 
 export default TemplateWrapper
