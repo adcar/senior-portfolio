@@ -9,7 +9,22 @@ const styles = theme => ({
   },
   wrapper: {
     paddingTop: theme.spacing.unit * 3,
-    padddingBottom: theme.spacing.unit * 3
+    padddingBottom: theme.spacing.unit * 3,
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
+    [theme.breakpoints.up('sm')]: {
+      display: 'block'
+    }
+  },
+  proof: {
+    width: 300,
+    marginLeft: theme.spacing.unit,
+    marginBottom: theme.spacing.unit * 2,
+    [theme.breakpoints.up('sm')]: {
+      float: 'right'
+    }
   }
 })
 
@@ -18,6 +33,11 @@ const CommunityService = props => (
     <Typography component="h1" variant="display2" align="center" gutterBottom>
       Community Service
     </Typography>
+    <img
+      className={props.classes.proof}
+      src={CommunityServiceProof}
+      alt="Community Service Proof"
+    />
     <Typography className={props.classes.indent}>
       Community service is an essential component of academics. It not only
       allows you to learn from others, but lets you contribute to a better
@@ -86,12 +106,6 @@ const CommunityService = props => (
       second term) if my schedule permits it.
     </Typography>
     <br />
-
-    <img
-      style={{ width: '100%' }}
-      src={CommunityServiceProof}
-      alt="Community Service Proof"
-    />
   </div>
 )
 
