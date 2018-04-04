@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import resume from '../img/resume.svg'
+import ResumeComponent from '../components/Resume'
 import Card, { CardContent } from 'material-ui/Card'
 import Typography from 'material-ui/Typography'
 import { withStyles } from 'material-ui/styles'
@@ -9,8 +9,12 @@ const styles = theme => ({
   wrapper: {
     paddingTop: theme.spacing.unit * 3,
     padddingBottom: theme.spacing.unit * 3
+  },
+  marginBottom: {
+    marginBottom: theme.spacing.unit * 3
   }
 })
+
 const Resume = props => (
   <div className={props.classes.wrapper}>
     <Typography component="h1" variant="display2" align="center" gutterBottom>
@@ -19,7 +23,10 @@ const Resume = props => (
     <Typography component="h2" variant="display1" align="center" gutterBottom>
       Resume{' '}
     </Typography>
-    <img src={resume} style={{ marginBottom: '1em' }} />
+    <div className={props.classes.marginBottom}>
+      <ResumeComponent />
+    </div>
+
     <Typography component="h2" variant="display1" align="center" gutterBottom>
       Cover Letter
     </Typography>
