@@ -11,7 +11,7 @@ const styles = theme => ({
     width: '100%',
     display: 'flex',
     flexDirection: 'column',
-    [theme.breakpoints.up('md')]: {
+    [theme.breakpoints.up('sm')]: {
       flexDirection: 'row'
     }
   },
@@ -21,9 +21,10 @@ const styles = theme => ({
     paddingTop: theme.spacing.unit,
     paddingBottom: theme.spacing.unit,
     width: '100%',
-    [theme.breakpoints.up('md')]: {
-      width: '30%'
+    [theme.breakpoints.up('sm')]: {
+      width: '39%'
     },
+
     backgroundColor: theme.palette.primary.main,
     display: 'flex',
     flexDirection: 'column',
@@ -32,8 +33,8 @@ const styles = theme => ({
   },
   main: {
     width: '100%',
-    [theme.breakpoints.up('md')]: {
-      width: '70%'
+    [theme.breakpoints.up('sm')]: {
+      width: '61%'
     }
   },
   row: {
@@ -90,6 +91,22 @@ const styles = theme => ({
   infoText: {
     color: 'white',
     fontWeight: 100
+  },
+  list: {
+    color: 'white',
+    padding: 0,
+    margin: 0
+  },
+  mainList: {
+    margin: 0,
+    paddingLeft: '1em'
+  },
+  title: {
+    textTransform: 'uppercase',
+    color: theme.palette.primary.main
+  },
+  listItem: {
+    verticalAlign: 'center'
   }
 })
 class Resume extends Component {
@@ -187,7 +204,7 @@ class Resume extends Component {
             >
               References
             </Typography>
-            <ul style={{ padding: 0, margin: 0, color: 'white' }}>
+            <ul className={classes.list}>
               <li>
                 <Typography className={classes.infoText}>
                   Nicole Tenny
@@ -218,7 +235,11 @@ class Resume extends Component {
           <div className={classes.row}>
             <Card style={{ flex: 1 }}>
               <CardContent>
-                <Typography variant="headline" component="h2">
+                <Typography
+                  variant="headline"
+                  component="h2"
+                  className={classes.title}
+                >
                   About Me
                 </Typography>
                 <Typography>
@@ -232,89 +253,101 @@ class Resume extends Component {
           <div className={classes.row}>
             <Card className={classes.leftCard}>
               <CardContent>
-                <Typography variant="headline" component="h2">
+                <Typography
+                  variant="headline"
+                  component="h2"
+                  className={classes.title}
+                >
                   Skills
                 </Typography>
-                <List>
-                  <ListItem>
-                    <ListItemText primary="HTML" />
-                  </ListItem>
-                  <ListItem>
-                    <ListItemText primary="CSS" />
-                  </ListItem>
-                  <ListItem>
-                    <ListItemText primary="JavaScript" />
-                  </ListItem>
-                  <ListItem>
-                    <ListItemText primary="React" />
-                  </ListItem>
-                  <ListItem>
-                    <ListItemText primary="SCSS" />
-                  </ListItem>
-                  <ListItem>
-                    <ListItemText primary="Bootstrap" />
-                  </ListItem>
-                  <ListItem>
-                    <ListItemText primary="jQuery" />
-                  </ListItem>
-                </List>
+                <ul className={classes.mainList}>
+                  <li className={classes.listItem}>
+                    <Typography>HTML</Typography>
+                  </li>
+                  <li>
+                    <Typography>CSS</Typography>
+                  </li>
+                  <li>
+                    <Typography>JavaScript</Typography>
+                  </li>
+                  <li>
+                    <Typography>React</Typography>
+                  </li>
+                  <li>
+                    <Typography>SCSS</Typography>
+                  </li>
+                  <li>
+                    <Typography>Bootstrap</Typography>
+                  </li>
+                  <li>
+                    <Typography>jQuery</Typography>
+                  </li>
+                </ul>
               </CardContent>
             </Card>
             <Card className={classes.rightCard} style={{ flex: 1 }}>
               <CardContent>
-                <Typography variant="headline" component="h2">
+                <Typography
+                  variant="headline"
+                  component="h2"
+                  className={classes.title}
+                >
                   Interests
                 </Typography>
-                <List>
-                  <ListItem>
-                    <ListItemText primary="Free and Open Source Software" />
-                  </ListItem>
-                  <ListItem>
-                    <ListItemText primary="React, ES6" />
-                  </ListItem>
-                  <ListItem>
-                    <ListItemText primary="GitHub" />
-                  </ListItem>
-                  <ListItem>
-                    <ListItemText primary="Front-end Design" />
-                  </ListItem>
-                  <ListItem>
-                    <ListItemText primary="Linux" />
-                  </ListItem>
-                  <ListItem>
-                    <ListItemText primary="Material Design" />
-                  </ListItem>
-                  <ListItem>
-                    <ListItemText primary="Penguins" />
-                  </ListItem>
-                </List>
+                <ul className={classes.mainList}>
+                  <li>
+                    <Typography>Free and Open Source Software</Typography>
+                  </li>
+                  <li>
+                    <Typography>React, ES6</Typography>
+                  </li>
+                  <li>
+                    <Typography>Front-end Design</Typography>
+                  </li>
+                  <li>
+                    <Typography>Linux</Typography>
+                  </li>
+                  <li>
+                    <Typography>Penguins</Typography>
+                  </li>
+                </ul>
               </CardContent>
             </Card>
           </div>
           <div className={classes.row}>
             <Card style={{ flex: 1 }}>
               <CardContent>
-                <Typography variant="headline" component="h2">
+                <Typography
+                  variant="headline"
+                  component="h2"
+                  className={classes.title}
+                >
                   Achievements
                 </Typography>
-                <List>
-                  <ListItem>
-                    <ListItemText primary="SkillsUSA National Competition, 1st place" />
-                  </ListItem>
-                  <ListItem>
-                    <ListItemText primary="National Technical Honor Society" />
-                  </ListItem>
-                  <ListItem>
-                    <ListItemText primary="Certified Web Designer Associate" />
-                  </ListItem>
-                </List>
+                <ul className={classes.mainList}>
+                  <li>
+                    <Typography>
+                      SkillsUSA National Competition, 1st place
+                    </Typography>
+                  </li>
+                  <li>
+                    <Typography>National Technical Honor Society</Typography>
+                  </li>
+                  <li>
+                    <Typography>Certified Web Designer Associate</Typography>
+                  </li>
+                </ul>
               </CardContent>
             </Card>
           </div>
           <div className={classes.row}>
             <Card style={{ flex: 1 }}>
               <CardContent>
-                <Typography variant="headline" component="h2">
+                <Typography
+                  variant="headline"
+                  component="h2"
+                  className={classes.title}
+                >
                   Experience
                 </Typography>
                 <Typography>
@@ -328,20 +361,24 @@ class Resume extends Component {
           <div className={classes.row}>
             <Card style={{ flex: 1 }}>
               <CardContent>
-                <Typography variant="headline" component="h2">
+                <Typography
+                  variant="headline"
+                  component="h2"
+                  className={classes.title}
+                >
                   Education
                 </Typography>
-                <List>
-                  <ListItem>
-                    <ListItemText primary="Center for Technology, Essex" />
-                  </ListItem>
-                  <ListItem>
-                    <ListItemText primary="Community College of Vermont" />
-                  </ListItem>
-                  <ListItem>
-                    <ListItemText primary="Vermont Technical College" />
-                  </ListItem>
-                </List>
+                <ul className={classes.mainList}>
+                  <li>
+                    <Typography>Center for Technology, Essex</Typography>
+                  </li>
+                  <li>
+                    <Typography>Community College of Vermont</Typography>
+                  </li>
+                  <li>
+                    <Typography>Vermont Technical College</Typography>
+                  </li>
+                </ul>
               </CardContent>
             </Card>
           </div>
