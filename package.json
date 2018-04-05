@@ -11,9 +11,11 @@
     "material-ui-icons": "^1.0.0-beta.36",
     "normalize.css": "^8.0.0",
     "react-helmet": "^5.2.0",
-    "react-image-lightbox": "^4.6.0"
+    "react-images": "^0.5.17"
   },
-  "keywords": ["gatsby"],
+  "keywords": [
+    "gatsby"
+  ],
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
@@ -22,7 +24,10 @@
     "test": "jest"
   },
   "jest": {
-    "testPathIgnorePatterns": ["/node_modules/", "/\\.cache/"]
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/\\.cache/"
+    ]
   },
   "devDependencies": {
     "babel-jest": "^22.4.3",
