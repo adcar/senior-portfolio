@@ -134,6 +134,7 @@ class Awards extends Component {
     return (
       <div>
         <Lightbox
+          backdropClosesModal
           images={[...awards, ...certs]}
           isOpen={this.state.lightboxIsOpen}
           onClickPrev={this.gotoPrevious}
