@@ -44,6 +44,9 @@ const styles = theme => ({
     [theme.breakpoints.up('md')]: {
       display: 'inline'
     }
+  },
+  list: {
+    paddingTop: 0
   }
 })
 
@@ -69,9 +72,18 @@ class Header extends Component {
     const drawer = (
       <div>
         <div className={classes.toolbar} />
-        <List>
+
+        <List
+          classes={{
+            padding: classes.list
+          }}
+        >
           <div>
-            <ListItem onClick={this.handleDrawerToggle}>
+            <ListItem>
+              <Typography variant="title">Senior Portfolio</Typography>
+            </ListItem>
+            <Divider />
+            <ListItem button onClick={this.handleDrawerToggle}>
               <Link to="/resume" className={classes.link}>
                 <ListItemText primary="Resume" />
               </Link>
