@@ -5,13 +5,9 @@ import Typography from 'material-ui/Typography'
 import Card, { CardContent, CardMedia, CardActions } from 'material-ui/Card'
 import Button from 'material-ui/Button'
 import { withStyles } from 'material-ui/styles'
-import nths from '../img/nths.jpg'
-import vermontSkills from '../img/skillsVermont.jpg'
-import nationalSkills from '../img/skillsChampion.jpg'
-import nthsCert from '../img/nthsCert.jpg'
-import honorsCert from '../img/honorsCert.jpg'
-import skillsCert from '../img/skillsCert.jpg'
 import Lightbox from 'react-images'
+
+import { awards, certs } from '../img'
 
 const styles = theme => ({
   cardContainer: {
@@ -36,35 +32,6 @@ const styles = theme => ({
     padddingBottom: theme.spacing.unit * 3
   }
 })
-
-const awards = [
-  {
-    caption: 'SkillsUSA Vermont',
-    src: vermontSkills
-  },
-  {
-    caption: 'SkillsUSA Nationals',
-    src: nationalSkills
-  },
-  {
-    caption: 'National Technical Honor Society',
-    src: nths
-  }
-]
-const certs = [
-  {
-    caption: 'NTHS Certificate',
-    src: nthsCert
-  },
-  {
-    caption: 'High Honors Certificate',
-    src: honorsCert
-  },
-  {
-    caption: 'SkillsUSA Certificate',
-    src: skillsCert
-  }
-]
 
 class Awards extends Component {
   constructor() {
@@ -118,7 +85,7 @@ class Awards extends Component {
     const { classes } = this.props
 
     const awardCards = awards.map((image, i) => (
-      <Card className={classes.card}>
+      <Card className={classes.card} key={i}>
         <CardMedia
           className={classes.media}
           image={image.src}
@@ -142,7 +109,7 @@ class Awards extends Component {
     ))
 
     const certCards = certs.map((image, i) => (
-      <Card className={classes.card}>
+      <Card className={classes.card} key={i}>
         <CardMedia
           className={classes.media}
           image={image.src}
@@ -157,7 +124,7 @@ class Awards extends Component {
           <Button
             size="small"
             color="primary"
-            onClick={e => this.openLightbox(i + 3, e)}
+            onClick={e => this.openLightbox(i + awards.length, e)}
           >
             View
           </Button>
