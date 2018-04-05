@@ -58,7 +58,7 @@ const IndexPage = props => (
       volutpat ornare aliquam. In hac habitasse platea dictumst.
     </Typography>
     <Typography>
-      Also, check out my <a href="https://alexandercardosi.com/">portfolio</a>
+      Also, check out my <a href="https://alexcardosi.me/">portfolio</a>
     </Typography>
   </div>
 )
