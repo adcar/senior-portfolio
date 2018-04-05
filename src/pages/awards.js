@@ -24,7 +24,8 @@ const styles = theme => ({
     width: 290
   },
   media: {
-    minHeight: 200
+    minHeight: 200,
+    cursor: 'pointer'
   },
   wrapper: {
     marginBottom: theme.spacing.unit * 3,
@@ -87,6 +88,7 @@ class Awards extends Component {
     const awardCards = awards.map((image, i) => (
       <Card className={classes.card} key={i}>
         <CardMedia
+          onClick={e => this.openLightbox(i, e)}
           className={classes.media}
           image={image.src}
           title={image.caption}
@@ -111,6 +113,7 @@ class Awards extends Component {
     const certCards = certs.map((image, i) => (
       <Card className={classes.card} key={i}>
         <CardMedia
+          onClick={e => this.openLightbox(i + awards.length, e)}
           className={classes.media}
           image={image.src}
           title={image.caption}
