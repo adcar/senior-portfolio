@@ -13,7 +13,7 @@ const styles = theme => ({
 
 const IndexPage = props => (
   <div className={props.classes.wrapper}>
-    <Typography variant="display2" component="h1">
+    <Typography variant="display2" component="h1" gutterBottom>
       Reflection
     </Typography>
     <Typography>
