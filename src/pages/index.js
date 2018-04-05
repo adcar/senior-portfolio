@@ -10,14 +10,14 @@ const styles = theme => ({
     padddingBottom: theme.spacing.unit * 3
   },
   hero: {
-    position: 'absolute',
-    left: 0,
-    width: '100vw',
+    zIndex: '-2',
+    position: 'relative',
+    width: '100%',
     height: 500,
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-    backgroundColor: theme.palette.primary.main
+    backgroundColor: theme.palette.primary.dark
   }
 })
 
