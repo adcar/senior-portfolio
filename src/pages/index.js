@@ -1,13 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
+import heroImg from '../img/heroImage.jpg'
 import Typography from 'material-ui/Typography'
 import { withStyles } from 'material-ui/styles'
 
 const styles = theme => ({
-  wrapper: {
-    padding: theme.spacing.unit * 3
-  },
   hero: {
     zIndex: '-2',
     position: 'relative',
@@ -17,10 +15,18 @@ const styles = theme => ({
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: theme.palette.primary.dark
+    backgroundColor: theme.palette.primary.dark,
+    backgroundImage: `linear-gradient(rgba(0,150,136, 0.9), rgba(0,150,136, 0.9)), url(${heroImg})`,
+    backgroundPosition: 'center',
+    backgroundSize: 'cover'
   },
   heroText: {
     color: theme.palette.primary.contrastText
+  },
+  wrapper: {
+    maxWidth: 1000,
+    margin: '0 auto',
+    padding: theme.spacing.unit * 3
   }
 })
 
