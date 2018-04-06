@@ -12,7 +12,7 @@ exports.onCreatePage = async ({ page, boundActionCreators }) => {
   const { createPage } = boundActionCreators
   console.log(page)
   return new Promise((resolve, reject) => {
-    if (page.path.match('/')) {
+    if (page.path === '/') {
       // It's assumed that `landingPage.js` exists in the `/layouts/` directory
       page.layout = 'landingPage'
 

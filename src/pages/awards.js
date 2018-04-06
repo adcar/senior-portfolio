@@ -26,11 +26,6 @@ const styles = theme => ({
   media: {
     minHeight: 200,
     cursor: 'pointer'
-  },
-  wrapper: {
-    marginBottom: theme.spacing.unit * 3,
-    paddingTop: theme.spacing.unit * 3,
-    padddingBottom: theme.spacing.unit * 3
   }
 })
 
@@ -136,16 +131,17 @@ class Awards extends Component {
     ))
     return (
       <div>
-        <Lightbox
-          backdropClosesModal
-          images={[...awards, ...certs]}
-          isOpen={this.state.lightboxIsOpen}
-          onClickPrev={this.gotoPrevious}
-          onClickNext={this.gotoNext}
-          onClose={this.closeLightbox}
-          currentImage={this.state.currentImage}
-        />
-        <div className={classes.wrapper}>
+        <div style={{ marginBottom: 20 }}>
+          <Lightbox
+            backdropClosesModal
+            images={[...awards, ...certs]}
+            isOpen={this.state.lightboxIsOpen}
+            onClickPrev={this.gotoPrevious}
+            onClickNext={this.gotoNext}
+            onClose={this.closeLightbox}
+            currentImage={this.state.currentImage}
+          />
+
           <Typography
             component="h1"
             variant="display2"
@@ -156,7 +152,7 @@ class Awards extends Component {
           </Typography>
           <div className={classes.cardContainer}>{awardCards}</div>
         </div>
-        <div className={classes.wrappr}>
+        <div>
           <Typography
             component="h1"
             variant="display2"

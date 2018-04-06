@@ -7,17 +7,13 @@ import Typography from 'material-ui/Typography'
 import { withStyles } from 'material-ui/styles'
 
 const styles = theme => ({
-  wrapper: {
-    paddingTop: theme.spacing.unit * 3,
-    padddingBottom: theme.spacing.unit * 3
-  },
   marginBottom: {
     marginBottom: theme.spacing.unit * 3
   }
 })
 
 const Resume = props => (
-  <div className={props.classes.wrapper}>
+  <div>
     <Typography component="h1" variant="display2" align="center" gutterBottom>
       Resume and Cover Letter
     </Typography>

@@ -7,10 +7,6 @@ import thumbnail from '../../img/uprightBuilders.png'
 import FeaturedImg from '../../components/FeaturedImg/'
 
 const styles = theme => ({
-  wrapper: {
-    paddingTop: theme.spacing.unit * 3,
-    padddingBottom: theme.spacing.unit * 3
-  },
   title: {
     paddingTop: theme.spacing.unit,
     paddingBottom: theme.spacing.unit
@@ -20,7 +16,7 @@ const styles = theme => ({
   }
 })
 const PortfolioFromScratch = props => (
-  <div className={props.classes.wrapper}>
+  <div>
     <Typography
       variant="display2"
       component="h1"

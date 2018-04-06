@@ -6,8 +6,7 @@ import { withStyles } from 'material-ui/styles'
 
 const styles = theme => ({
   wrapper: {
-    paddingTop: theme.spacing.unit * 3,
-    padddingBottom: theme.spacing.unit * 3
+    padding: theme.spacing.unit * 3
   },
   hero: {
     zIndex: '-2',
@@ -17,17 +16,34 @@ const styles = theme => ({
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
+    justifyContent: 'center',
     backgroundColor: theme.palette.primary.dark
+  },
+  heroText: {
+    color: theme.palette.primary.contrastText
   }
 })
 
 const IndexPage = props => (
   <div>
     <header className={props.classes.hero}>
-      <h1>Senior Portfolio</h1>
-      <h2>By Alexander Cardosi</h2>
+      <Typography
+        variant="display3"
+        component="h1"
+        color="inherit"
+        className={props.classes.heroText}
+      >
+        Senior Portfolio
+      </Typography>
+      <Typography
+        variant="display1"
+        component="h2"
+        className={props.classes.heroText}
+      >
+        Alexander Cardosi
+      </Typography>
     </header>
-    <div className={props.classes.wrapper} style={{ marginTop: 500 }}>
+    <div className={props.classes.wrapper}>
       <Typography variant="display2" component="h1" gutterBottom>
         Reflection
       </Typography>

@@ -9,8 +9,6 @@ const styles = theme => ({
     textIndent: '2em'
   },
   wrapper: {
-    paddingTop: theme.spacing.unit * 3,
-    padddingBottom: theme.spacing.unit * 3,
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',

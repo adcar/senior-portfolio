@@ -14,10 +14,6 @@ const style = theme => ({
     marginLeft: 'auto',
     marginRight: 'auto'
   },
-  wrapper: {
-    paddingTop: theme.spacing.unit * 3,
-    padddingBottom: theme.spacing.unit * 3
-  },
   card: {
     margin: theme.spacing.unit,
     width: 290
@@ -36,7 +32,7 @@ const BestWorks = props => {
   ))
 
   return (
-    <div className={props.classes.wrapper}>
+    <div>
       <Typography component="h1" variant="display2" align="center" gutterBottom>
         Best Works
       </Typography>

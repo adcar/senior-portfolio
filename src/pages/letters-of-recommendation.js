@@ -5,10 +5,6 @@ import Typography from 'material-ui/Typography'
 import Card, { CardContent } from 'material-ui/Card'
 import Link from 'gatsby-link'
 const styles = theme => ({
-  wrapper: {
-    paddingTop: theme.spacing.unit * 3,
-    padddingBottom: theme.spacing.unit * 3
-  },
   indent: {
     textIndent: '2em'
   },
@@ -19,7 +15,7 @@ const styles = theme => ({
 })
 
 const Recommendations = props => (
-  <div className={props.classes.wrapper}>
+  <div>
     <Typography variant="display2" component="h1" align="center" gutterBottom>
       Letters of Recommendation
     </Typography>
