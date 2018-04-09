@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter'
+    title: 'Senior Portfolio'
   },
   plugins: [
     {
@@ -9,8 +9,8 @@ module.exports = {
         name: 'Senior Portfolio - Alexander Cardosi',
         short_name: 'Senior Portfolio',
         start_url: '/',
-        background_color: '#f7f0eb',
-        theme_color: '#a2466c',
+        background_color: '#ffffff',
+        theme_color: '#00897B',
         display: 'minimal-ui',
         icon: 'src/img/uprightBuilders.png' // This path is relative to the root of the site.
       }
