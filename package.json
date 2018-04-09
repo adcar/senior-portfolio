@@ -6,6 +6,8 @@
   "dependencies": {
     "gatsby": "^1.9.243",
     "gatsby-link": "^1.6.40",
+    "gatsby-plugin-manifest": "^1.0.17",
+    "gatsby-plugin-offline": "^1.0.15",
     "gatsby-plugin-react-helmet": "^2.0.9",
     "material-ui": "^1.0.0-beta.40",
     "material-ui-icons": "^1.0.0-beta.36",
