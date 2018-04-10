@@ -10,7 +10,7 @@ module.exports = {
         short_name: 'Senior Portfolio',
         start_url: '/',
         background_color: '#ffffff',
-        theme_color: '#00897B',
+        theme_color: '#009688',
         display: 'minimal-ui',
         icon: 'src/img/uprightBuilders.png' // This path is relative to the root of the site.
       }
