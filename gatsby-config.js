@@ -20,17 +20,17 @@ module.exports = {
             type: `image/png`
           },
           {
-            src: ` /favicons/android-chrome-72x72.png`,
+            src: `/favicons/android-chrome-72x72.png`,
             sizes: `72x72`,
             type: `image/png`
           },
           {
-            src: ` /favicons/android-chrome-96x96.png`,
+            src: `/favicons/android-chrome-96x96.png`,
             sizes: `96x96`,
             type: `image/png`
           },
           {
-            src: ` /favicons/android-chrome-144x144.png`,
+            src: `/favicons/android-chrome-144x144.png`,
             sizes: `144x144`,
             type: `image/png`
           },
@@ -40,12 +40,12 @@ module.exports = {
             type: `image/png`
           },
           {
-            src: ` /favicons/android-chrome-256x256.png`,
+            src: `/favicons/android-chrome-256x256.png`,
             sizes: `256x256`,
             type: `image/png`
           },
           {
-            src: ` /favicons/android-chrome-384x384.png`,
+            src: `/favicons/android-chrome-384x384.png`,
             sizes: `384x384`,
             type: `image/png`
           },
