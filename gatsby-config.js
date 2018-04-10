@@ -8,7 +8,7 @@ module.exports = {
       options: {
         name: 'Senior Portfolio - Alexander Cardosi',
         short_name: 'Senior Portfolio',
-        start_url: '/',
+        start_url: '/index.html',
         background_color: '#ffffff',
         theme_color: '#009688',
         display: 'minimal-ui',
