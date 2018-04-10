@@ -12,7 +12,7 @@ module.exports = {
         background_color: '#ffffff',
         theme_color: '#009688',
         display: 'minimal-ui',
-        icon: 'src/img/uprightBuilders.png' // This path is relative to the root of the site.
+        icon: './src/img/senior-portfolio-logo.png' // This path is relative to the root of the site.
       }
     },
     'gatsby-plugin-react-helmet',
