@@ -10,7 +10,6 @@
 // called after every page is created.
 exports.onCreatePage = async ({ page, boundActionCreators }) => {
   const { createPage } = boundActionCreators
-  console.log(page)
   return new Promise((resolve, reject) => {
     if (page.path === '/') {
       // It's assumed that `landingPage.js` exists in the `/layouts/` directory
