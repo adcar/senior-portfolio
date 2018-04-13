@@ -33,6 +33,9 @@ const styles = theme => ({
     width: '100%',
     height: '100%'
   },
+  teal: {
+    color: theme.palette.primary.main
+  },
   navIconHide: {
     marginRight: theme.spacing.unit * 2,
     [theme.breakpoints.up('md')]: {
@@ -73,40 +76,51 @@ class Header extends Component {
       <div>
         <div className={classes.toolbar} />
 
-        <List
-          classes={{
-            padding: classes.list
-          }}
-        >
+        <List classes={{ padding: classes.list }}>
           <div>
             <ListItem>
               <Typography variant="title">Senior Portfolio</Typography>
             </ListItem>
             <Divider />
-            <ListItem button onClick={this.handleDrawerToggle}>
-              <Link to="/resume" className={classes.link}>
-                <ListItemText primary="Resume" />
-              </Link>
+            <ListItem
+              button
+              onClick={this.handleDrawerToggle}
+              to="/resume"
+              component={Link}
+            >
+              <ListItemText primary="Resume" />
             </ListItem>
-            <ListItem button onClick={this.handleDrawerToggle}>
-              <Link to="/best-works" className={classes.link}>
-                <ListItemText primary="Best Works" />
-              </Link>
+            <ListItem
+              button
+              onClick={this.handleDrawerToggle}
+              component={Link}
+              to="/best-works"
+            >
+              <ListItemText primary="Best Works" />
             </ListItem>
-            <ListItem button onClick={this.handleDrawerToggle}>
-              <Link to="/letters-of-recommendation" className={classes.link}>
-                <ListItemText primary="Recommendations" />
-              </Link>
+            <ListItem
+              button
+              onClick={this.handleDrawerToggle}
+              component={Link}
+              to="/letters-of-recommendation"
+            >
+              <ListItemText primary="Recommendations" />
             </ListItem>
-            <ListItem button onClick={this.handleDrawerToggle}>
-              <Link to="/community-service" className={classes.link}>
-                <ListItemText primary="Community Service" />
-              </Link>
+            <ListItem
+              button
+              onClick={this.handleDrawerToggle}
+              component={Link}
+              to="/community-service"
+            >
+              <ListItemText primary="Community Service" />
             </ListItem>
-            <ListItem button onClick={this.handleDrawerToggle}>
-              <Link to="/awards" className={classes.link}>
-                <ListItemText primary="Awards" />
-              </Link>
+            <ListItem
+              button
+              onClick={this.handleDrawerToggle}
+              component={Link}
+              to="/honors-and-awards"
+            >
+              <ListItemText primary="Awards" />
             </ListItem>
           </div>
         </List>
@@ -114,7 +128,7 @@ class Header extends Component {
     )
     return (
       <div className={classes.root}>
-        <AppBar position="static" color="default" color="primary">
+        <AppBar position="static" color="default" color="inherit">
           <Toolbar>
             <IconButton
               color="inherit"
@@ -122,7 +136,7 @@ class Header extends Component {
               onClick={this.handleDrawerToggle}
               className={classes.navIconHide}
             >
-              <MenuIcon />
+              <MenuIcon className={classes.teal} />
             </IconButton>
             <Link to="/" className={[classes.link, classes.flex].join(' ')}>
               <Typography
@@ -134,24 +148,46 @@ class Header extends Component {
               </Typography>
             </Link>
             <div className={classes.links}>
-              <Link to="/resume" className={classes.link}>
-                <Button color="inherit">Resume</Button>
-              </Link>
-              <Link to="/best-works" className={classes.link}>
-                <Button color="inherit">Best Works</Button>
-              </Link>
-
-              <Link to="/letters-of-recommendation" className={classes.link}>
-                <Button color="inherit">Recommendations</Button>
-              </Link>
-
-              <Link to="/community-service" className={classes.link}>
-                <Button color="inherit">Community Service</Button>
-              </Link>
-
-              <Link to="/awards" className={classes.link}>
-                <Button color="inherit">Awards</Button>
-              </Link>
+              <Button
+                to="/resume"
+                color="inherit"
+                component={Link}
+                className={classes.teal}
+              >
+                Resume
+              </Button>
+              <Button
+                color="inherit"
+                to="/best-works"
+                component={Link}
+                className={classes.teal}
+              >
+                Best Works
+              </Button>
+              <Button
+                color="inherit"
+                to="/letters-of-recommendation"
+                component={Link}
+                className={classes.teal}
+              >
+                Recommendations
+              </Button>
+              <Button
+                color="inherit"
+                to="/community-service"
+                component={Link}
+                className={classes.teal}
+              >
+                Community Service
+              </Button>
+              <Button
+                color="inherit"
+                to="/honors-and-awards"
+                component={Link}
+                className={classes.teal}
+              >
+                Awards
+              </Button>
             </div>
           </Toolbar>
         </AppBar>

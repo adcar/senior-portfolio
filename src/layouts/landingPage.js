@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import Header from '../components/Header'
+import Footer from '../components/Footer'
 import CssBaseline from 'material-ui/CssBaseline'
 import './roboto-font.css'
 
@@ -28,11 +29,20 @@ const TemplateWrapper = ({ children }) => (
       <Header />
       <div
         style={{
-          margin: '0 auto',
-          paddingTop: 0
+          height: '100%',
+          display: 'flex',
+          flexDirection: 'column'
         }}
       >
-        {children()}
+        <div
+          style={{
+            paddingTop: 0,
+            flex: '1'
+          }}
+        >
+          {children()}
+        </div>
+        <Footer />
       </div>
     </div>
   </MuiThemeProvider>
