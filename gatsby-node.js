@@ -18,6 +18,13 @@ exports.onCreatePage = async ({ page, boundActionCreators }) => {
       // Update the page.
       createPage(page)
     }
+    if (page.path.includes('/preview')) {
+      // It's assumed that `landingPage.js` exists in the `/layouts/` directory
+      page.layout = 'preview'
+
+      // Update the page.
+      createPage(page)
+    }
 
     resolve()
   })

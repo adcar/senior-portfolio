@@ -15,7 +15,7 @@ const styles = theme => ({
     paddingBottom: theme.spacing.unit
   }
 })
-const PortfolioFromScratch = props => (
+const Apollo = props => (
   <div>
     <Typography
       variant="display2"
@@ -92,7 +92,7 @@ const PortfolioFromScratch = props => (
   </div>
 )
 
-PortfolioFromScratch.propTypes = {
+Apollo.propTypes = {
   classes: PropTypes.object.isRequired
 }
-export default withStyles(styles)(PortfolioFromScratch)
+export default withStyles(styles)(Apollo)

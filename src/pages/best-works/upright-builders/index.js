@@ -15,7 +15,7 @@ const styles = theme => ({
     paddingBottom: theme.spacing.unit
   }
 })
-const PortfolioFromScratch = props => (
+const UprightBuilders = props => (
   <div>
     <Typography
       variant="display2"
@@ -84,7 +84,7 @@ const PortfolioFromScratch = props => (
   </div>
 )
 
-PortfolioFromScratch.propTypes = {
+UprightBuilders.propTypes = {
   classes: PropTypes.object.isRequired
 }
-export default withStyles(styles)(PortfolioFromScratch)
+export default withStyles(styles)(UprightBuilders)
