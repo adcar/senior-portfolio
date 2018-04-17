@@ -23,6 +23,9 @@ const styles = theme => ({
   flex: {
     flex: 1
   },
+  title: {
+    color: theme.palette.primary.main
+  },
   menuButton: {
     marginLeft: -12,
     marginRight: 20
@@ -141,8 +144,7 @@ class Header extends Component {
             <Link to="/" className={[classes.link, classes.flex].join(' ')}>
               <Typography
                 variant="title"
-                color="inherit"
-                className={classes.flex}
+                className={[classes.flex, classes.title].join(' ')}
               >
                 Senior Portfolio
               </Typography>
