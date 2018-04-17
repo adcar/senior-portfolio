@@ -1,9 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
+import Footer from '../components/Footer'
 import Header from '../components/Header'
 import CssBaseline from 'material-ui/CssBaseline'
 import './roboto-font.css'
+import './icb.css'
 
 import { createMuiTheme, MuiThemeProvider } from 'material-ui/styles'
 import teal from 'material-ui/colors/teal'
@@ -27,15 +29,26 @@ const TemplateWrapper = ({ children }) => (
       >
         <html lang="en" />
       </Helmet>
-      <Header />
       <div
         style={{
-          margin: '0 auto',
-          maxWidth: 1000,
-          padding: theme.spacing.unit * 3
+          height: '100%',
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          justifyContent: 'flex-start'
         }}
       >
-        {children()}
+        <Header />
+        <div
+          style={{
+            flex: 1,
+            maxWidth: 1000,
+            padding: theme.spacing.unit * 3
+          }}
+        >
+          {children()}
+        </div>
+        <Footer />
       </div>
     </div>
   </MuiThemeProvider>

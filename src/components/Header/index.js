@@ -18,7 +18,7 @@ import MenuIcon from 'material-ui-icons/Menu'
 
 const styles = theme => ({
   root: {
-    flexGrow: 1
+    width: '100%'
   },
   flex: {
     flex: 1

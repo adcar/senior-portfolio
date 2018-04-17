@@ -26,7 +26,6 @@ const TemplateWrapper = ({ children }) => (
           { name: 'keywords', content: 'school, portfolio' }
         ]}
       />
-      <Header />
       <div
         style={{
           height: '100%',
@@ -34,6 +33,8 @@ const TemplateWrapper = ({ children }) => (
           flexDirection: 'column'
         }}
       >
+        <Header />
+
         <div
           style={{
             paddingTop: 0,

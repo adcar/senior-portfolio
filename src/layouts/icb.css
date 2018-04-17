@@ -1,0 +1,6 @@
+html,
+body,
+#___gatsby,
+div[data-reactroot] {
+  height: 100%;
+}

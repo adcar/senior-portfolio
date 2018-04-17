@@ -8,6 +8,7 @@ const styles = theme => ({
   footer: {
     backgroundColor: theme.palette.primary.main,
     height: 50,
+    minHeight: 50,
     display: 'flex',
     jusitfyContent: 'center',
     alignItems: 'center',
