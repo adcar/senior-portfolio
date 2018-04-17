@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import Typography from 'material-ui/Typography'
 import { withStyles } from 'material-ui/styles'
 import Link from 'gatsby-link'
-import thumbnail from '../../img/portfolio-from-scratch.png'
+import { portfolioFromScratch as thumbnail } from '../../img'
 import FeaturedImg from '../../components/FeaturedImg/'
 
 const styles = theme => ({

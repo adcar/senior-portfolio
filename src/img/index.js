@@ -5,9 +5,11 @@ import nthsCert from './nthsCert.jpg'
 import honorsCert from './honorsCert.jpg'
 import skillsCert from './skillsCert.jpg'
 
-import portfolioFromScratch from './portfolio-from-scratch.png'
-import uprightBuilders from './uprightBuilders.png'
-import apollo from './apollo.png'
+import portfolioFromScratch from './portfolio-from-scratch.jpg'
+import uprightBuilders from './uprightBuilders.jpg'
+import apollo from './apollo.jpg'
+
+export { portfolioFromScratch, uprightBuilders, apollo }
 
 export const awards = [
   {

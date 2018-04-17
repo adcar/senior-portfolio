@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import Typography from 'material-ui/Typography'
 import { withStyles } from 'material-ui/styles'
 import Link from 'gatsby-link'
-import thumbnail from '../../img/uprightBuilders.png'
+import { uprightBuilders as thumbnail } from '../../img'
 import FeaturedImg from '../../components/FeaturedImg/'
 
 const styles = theme => ({
