@@ -3,8 +3,8 @@ import PropTypes from 'prop-types'
 import Typography from 'material-ui/Typography'
 import { withStyles } from 'material-ui/styles'
 import Link from 'gatsby-link'
-import { portfolioFromScratch as thumbnail } from '../../img'
-import FeaturedImg from '../../components/FeaturedImg/'
+import { portfolioFromScratch as thumbnail } from '../../../img'
+import FeaturedImg from '../../../components/FeaturedImg/'
 
 const styles = theme => ({
   title: {
@@ -29,6 +29,7 @@ const PortfolioFromScratch = props => (
     <FeaturedImg
       image={thumbnail}
       quote="A comfort zone is a beautiful place, but nothing ever grows there."
+      author="Unknown"
     />
     <Typography component="p" className={props.classes.textBlock}>
       My best work by far would have to be my portfolio website. I feel like
@@ -46,7 +47,13 @@ const PortfolioFromScratch = props => (
       find that using frameworks without knowing the underlying technology
       disrupts learning. I personally think that everyone starting out in coding
       should start out without frameworks, and work their way up once they fully
-      understand the concepts behind them.{' '}
+      understand the concepts behind them. Frameworks give you a platform to
+      start coding from. This allows programmers to create websites / apps
+      easily and quickly. However, these frameworks abstract the finer details
+      of the programming language (in this case JavaScript), thus preventing the
+      programmer from learning the language itself, and they become familiar
+      with just one framework (of which there are thousands, compared to the one
+      main language of the web: JavaScript).
     </Typography>
     <Typography component="p" className={props.classes.textBlock}>
       Web design has always been a passion of mine. I wanted to make sure to
@@ -73,7 +80,7 @@ const PortfolioFromScratch = props => (
       option and hamburger menu when on mobile, and even how to make my own
       lightbox (upon clicking an image, a preview is loaded). All of these
       components were a bit difficult to create, but I’m glad I challenged
-      myself since I learned so much.{' '}
+      myself since I learned so much.
     </Typography>
     <Typography component="p" className={props.classes.textBlock}>
       This project is one of my favorites. It has so many features I like, and
@@ -81,14 +88,16 @@ const PortfolioFromScratch = props => (
       last year, this project still has a modern design and I’m quite proud of
       it. If I was to make another portfolio, it’d have a completely different
       design, just to test my skills and give a fresh to look to the website.
-      Overall, I’m very proud of this website and hope to create more like it.{' '}
+      Overall, I’m very proud of this website and hope to create more like it.
     </Typography>
     <Typography component="p" className={props.classes.textBlock}>
       Stepping outside of my comfort zone is what motivated me to create this
       site. Before starting the project, I had never made a successful
       navigation bar with mobile support, or changed kerning to further support
       the design. Building this site with these features, even though I wasn’t
-      comfortable with them, allowed me to further advance my skill set.
+      comfortable with them, allowed me to further advance my skill set. Having
+      a strong knowledge of web fundamentals will not only make me a better web
+      developer, but a stronger learner as well.
     </Typography>
   </div>
 )

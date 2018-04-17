@@ -17,7 +17,9 @@ const styles = theme => ({
 const FeaturedImg = props => (
   <div className={props.classes.wrapper}>
     <img src={props.image} className={props.classes.img} />
-    <q className={props.classes.quote}>{props.quote}</q>
+    <span className={props.classes.quote}>
+      <q>{props.quote}</q> - {props.author}
+    </span>
   </div>
 )
 
