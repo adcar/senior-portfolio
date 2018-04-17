@@ -25,11 +25,13 @@ function SimpleMediaCard(props) {
   return (
     <div className={classes.footer}>
       <Typography
+        style={{ verticalAlign: 'middle' }}
         align="center"
         className={classes.footerText}
         component="span"
       >
-        Made with <Heart style={{ height: '0.8rem' }} />
+        Made with <Heart style={{ height: '1rem', verticalAlign: 'middle' }} />{' '}
+        by Alexander Cardosi
       </Typography>
     </div>
   )

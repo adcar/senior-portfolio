@@ -51,8 +51,9 @@ const styles = theme => ({
       display: 'inline'
     }
   },
-  list: {
-    paddingTop: 0
+
+  drawer: {
+    width: 250
   }
 })
 
@@ -79,10 +80,12 @@ class Header extends Component {
       <div>
         <div className={classes.toolbar} />
 
-        <List classes={{ padding: classes.list }}>
+        <List className={classes.drawer}>
           <div>
             <ListItem>
-              <Typography variant="title">Senior Portfolio</Typography>
+              <Typography variant="title" color="primary">
+                Senior Portfolio
+              </Typography>
             </ListItem>
             <Divider />
             <ListItem
