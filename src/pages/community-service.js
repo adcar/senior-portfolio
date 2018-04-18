@@ -62,35 +62,34 @@ const CommunityService = props => (
     </Typography>
 
     <Typography className={props.classes.indent}>
-      I chose to campaign for Donald Trump because my aunt told me about the
-      opportunity and I thought it&rsquo;d be a great way to not only watch a
-      Trump rally, but also get him elected. I was fascinated with Trump and
-      supported every decision he&rsquo;d made during the election, and wanted
-      to help such a brilliant man become the next president. A strong indicator
-      that I made a difference would be that Trump won the election. Although,
-      he didn&rsquo;t win New Hampshire, which is a bit of a shame, but he did
-      come close (which I would like to think I helped with). Being able to help
-      such an important figure in American politics gave me both a sense of
-      accomplishment and pride.
+      My aunt told me about an opportunity to help my community, and the
+      political ecosystem, by campaigning for Donald J. Trump. I was fascinated
+      with Trump and supported every decision he’d made during the election, and
+      wanted to help such a brilliant man become the next president. It was
+      important for me to not only help Donald Trump, but also the entire
+      community by getting him elected. I called 14 pages worth of phone
+      numbers, and left a message on all working numbers. This was a strong
+      indicator of my success because I personally felt like I made a difference
+      based on those calls. Helping such an important figure in American
+      politics gave me both a sense of accomplishment and pride. Not only was my
+      knowledge of politics increased during this journey, but my ability to
+      work with others as well.
     </Typography>
 
     <Typography className={props.classes.indent}>
-      Society relies on volunteers simply because some organizations don&rsquo;t
+      Society relies on volunteers simply because some organizations don’t
       generate revenue. In this case, becoming the president of the United
-      States doesn&rsquo;t pay very well (400k a year, although Trump only takes
-      $1 a year because the law requires him to). This job clearly doesn&rsquo;t
-      pay well compared to great cost of campaigning. So why do it? Simply
-      because Trump finds it in his heart to help others and make this country
-      great again. The selfless act of running for president is what drew me
-      towards working and campaigning for Donald Trump. There are of course
-      other organizations (such as charities) that aren&rsquo;t run for the
-      purpose of generating revenue and therefore rely on volunteers and
-      donations.
+      States doesn’t pay very well (400k a year, although Trump only takes $1 a
+      year because the law requires him to). I think it’s important to help out
+      the community and perform selfless acts, because there are always people
+      who need your services, and not all of them have the funds. If everyone
+      does just a few things to better the community, all of society will be
+      significantly improved.
     </Typography>
     <Typography className={props.classes.indent}>
-      When hearing about community service I felt rather pessimistic. I
-      didn&rsquo;t feel like it was important skill and I needed to focus more
-      on academics. However, when the opportunity to volunteer the greatest
+      When hearing about community service I originally felt pessimistic. I
+      didn’t feel like it was important skill and I needed to focus more on
+      academics. However, when the opportunity to volunteer the greatest
       presidential-candidate of all time had arised, I had to take it. When
       starting the campaign, my attitude immediately changed. I was greeted with
       respect and kindness from the others around me, it was all very civil and
@@ -98,10 +97,10 @@ const CommunityService = props => (
       campaign.
     </Typography>
     <Typography className={props.classes.indent}>
-      Overall I gained some valuable insight into what a presidential campaign
+      Overall, I gained some valuable insight into what a presidential campaign
       looks like, and how to properly work with others in a real-world
-      environment. I will probably volunteer again (for Donald Trump&rsquo;s
-      second term) if my schedule permits it.
+      environment. I look forward to volunteering for Donald Trump’s second term
+      in order contribute to my community once again.
     </Typography>
     <br />
   </div>
