@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import { withStyles } from 'material-ui/styles'
 import Typography from 'material-ui/Typography'
+import PageLabel from '../components/PageLabel'
 import CommunityServiceProof from '../img/community-service-proof.jpg'
 const styles = theme => ({
   indent: {
@@ -29,9 +30,7 @@ const styles = theme => ({
 
 const CommunityService = props => (
   <div className={props.classes.wrapper}>
-    <Typography component="h1" variant="display2" align="center" gutterBottom>
-      Community Service
-    </Typography>
+    <PageLabel>Community Service</PageLabel>
     <img
       className={props.classes.proof}
       src={CommunityServiceProof}

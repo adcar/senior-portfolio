@@ -50,8 +50,13 @@ const IndexPage = props => (
       </Typography>
     </header>
     <div className={props.classes.wrapper}>
-      <Typography variant="display2" component="h1" gutterBottom>
-        Reflection
+      <Typography
+        variant="display1"
+        component="h2"
+        color="primary"
+        gutterBottom
+      >
+        My Path
       </Typography>
       <Typography>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam maximus,

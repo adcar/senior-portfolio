@@ -4,6 +4,7 @@ import Link from 'gatsby-link'
 import Typography from 'material-ui/Typography'
 import Card, { CardContent, CardMedia, CardActions } from 'material-ui/Card'
 import Button from 'material-ui/Button'
+import PageLabel from '../components/PageLabel'
 import { withStyles } from 'material-ui/styles'
 import Lightbox from 'react-images'
 
@@ -141,11 +142,12 @@ class Awards extends Component {
             onClose={this.closeLightbox}
             currentImage={this.state.currentImage}
           />
-
+          <PageLabel>Honors & Awards</PageLabel>
           <Typography
-            component="h1"
-            variant="display2"
+            component="h2"
+            variant="display1"
             align="center"
+            color="primary"
             gutterBottom
           >
             Awards
@@ -154,9 +156,10 @@ class Awards extends Component {
         </div>
         <div>
           <Typography
-            component="h1"
-            variant="display2"
+            component="h2"
+            variant="display1"
             align="center"
+            color="primary"
             gutterBottom
           >
             Certificates

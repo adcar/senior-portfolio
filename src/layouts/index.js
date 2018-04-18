@@ -44,8 +44,7 @@ const TemplateWrapper = ({ children }) => (
           style={{
             flex: 1,
             maxWidth: 1000,
-            width: '100%',
-            padding: theme.spacing.unit * 1,
+            padding: theme.spacing.unit * 3,
             paddingTop: theme.spacing.unit * 3
           }}
         >

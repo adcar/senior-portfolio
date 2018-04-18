@@ -2,21 +2,23 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import Card from '../../components/Card'
+import PageLabel from '../../components/PageLabel'
 import { bestWorks } from '../../img/'
 import { withStyles } from 'material-ui/styles'
 import Typography from 'material-ui/Typography'
 
 const style = theme => ({
   cardContainer: {
+    flexFlow: 'row wrap',
     display: 'flex',
-    flexWrap: 'wrap',
     justifyContent: 'center',
+    alignItems: 'center',
     marginLeft: 'auto',
     marginRight: 'auto'
   },
   card: {
-    margin: theme.spacing.unit,
-    width: 290
+    width: 290,
+    margin: theme.spacing.unit
   }
 })
 
@@ -33,9 +35,7 @@ const BestWorks = props => {
 
   return (
     <div>
-      <Typography component="h1" variant="display2" align="center" gutterBottom>
-        Best Works
-      </Typography>
+      <PageLabel>Best Works</PageLabel>
       <div className={props.classes.cardContainer}>{works}</div>
     </div>
   )

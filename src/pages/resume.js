@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import ResumeComponent from '../components/Resume'
+import PageLabel from '../components/PageLabel'
 import Card, { CardContent } from 'material-ui/Card'
 import Typography from 'material-ui/Typography'
 import { withStyles } from 'material-ui/styles'
@@ -14,17 +15,26 @@ const styles = theme => ({
 
 const Resume = props => (
   <div>
-    <Typography component="h1" variant="display2" align="center" gutterBottom>
-      Resume and Cover Letter
-    </Typography>
-    <Typography component="h2" variant="display1" align="center" gutterBottom>
+    <PageLabel>Resume &amp; Cover Letter</PageLabel>
+    <Typography
+      component="h2"
+      variant="display1"
+      align="center"
+      color="primary"
+      gutterBottom
+    >
       Resume{' '}
     </Typography>
     <div className={props.classes.marginBottom}>
       <ResumeComponent />
     </div>
-
-    <Typography component="h2" variant="display1" align="center" gutterBottom>
+    <Typography
+      component="h2"
+      variant="display1"
+      align="center"
+      color="primary"
+      gutterBottom
+    >
       Cover Letter
     </Typography>
     <Card>

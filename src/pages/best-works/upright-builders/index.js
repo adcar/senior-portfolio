@@ -5,6 +5,7 @@ import { withStyles } from 'material-ui/styles'
 import Link from 'gatsby-link'
 import { uprightBuilders as thumbnail } from '../../../img'
 import FeaturedImg from '../../../components/FeaturedImg/'
+import PageLabel from '../../../components/PageLabel/'
 
 const styles = theme => ({
   title: {
@@ -17,15 +18,7 @@ const styles = theme => ({
 })
 const UprightBuilders = props => (
   <div>
-    <Typography
-      variant="display2"
-      component="h1"
-      align="center"
-      className={props.classes.title}
-      gutterBottom
-    >
-      Upright Builders
-    </Typography>
+    <PageLabel>Upright Builders</PageLabel>
     <FeaturedImg
       image={thumbnail}
       quote="Believe you can and you’re halfway there"

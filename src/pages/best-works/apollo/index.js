@@ -5,6 +5,7 @@ import { withStyles } from 'material-ui/styles'
 import Link from 'gatsby-link'
 import { apollo as thumbnail } from '../../../img'
 import FeaturedImg from '../../../components/FeaturedImg/'
+import PageLabel from '../../../components/PageLabel'
 
 const styles = theme => ({
   title: {
@@ -17,15 +18,8 @@ const styles = theme => ({
 })
 const Apollo = props => (
   <div>
-    <Typography
-      variant="display2"
-      component="h1"
-      align="center"
-      className={props.classes.title}
-      gutterBottom
-    >
-      Apollo
-    </Typography>
+    <PageLabel>Apollo</PageLabel>
+
     <FeaturedImg
       image={thumbnail}
       quote="If people take anything from my music, it should be motivation to know that anything is possible as long as you keep working at it and don't back down."

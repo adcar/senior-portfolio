@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { withStyles } from 'material-ui/styles'
 import Typography from 'material-ui/Typography'
 import Card, { CardContent } from 'material-ui/Card'
+import PageLabel from '../components/PageLabel'
 import Link from 'gatsby-link'
 const styles = theme => ({
   indent: {
@@ -16,9 +17,7 @@ const styles = theme => ({
 
 const Recommendations = props => (
   <div>
-    <Typography variant="display2" component="h1" align="center" gutterBottom>
-      Letters of Recommendation
-    </Typography>
+    <PageLabel>Letters of Recommendation</PageLabel>
     {/* Mrs. Quinn's recommendation letter */}
     <Card className={props.classes.card}>
       <CardContent>

@@ -20,7 +20,7 @@ const styles = theme => ({
   }
 })
 
-function SimpleMediaCard(props) {
+const Footer = props => {
   const { classes } = props
   return (
     <div className={classes.footer}>
@@ -37,8 +37,8 @@ function SimpleMediaCard(props) {
   )
 }
 
-SimpleMediaCard.propTypes = {
+Footer.propTypes = {
   classes: PropTypes.object.isRequired
 }
 
-export default withStyles(styles)(SimpleMediaCard)
+export default withStyles(styles)(Footer)

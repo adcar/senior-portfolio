@@ -4,6 +4,7 @@ import Typography from 'material-ui/Typography'
 import { withStyles } from 'material-ui/styles'
 import Link from 'gatsby-link'
 import { portfolioFromScratch as thumbnail } from '../../../img'
+import PageLabel from '../../../components/PageLabel/'
 import FeaturedImg from '../../../components/FeaturedImg/'
 
 const styles = theme => ({
@@ -17,15 +18,7 @@ const styles = theme => ({
 })
 const PortfolioFromScratch = props => (
   <div>
-    <Typography
-      variant="display2"
-      component="h1"
-      align="center"
-      className={props.classes.title}
-      gutterBottom
-    >
-      Portfolio From Scratch
-    </Typography>
+    <PageLabel>Portfolio From Scratch</PageLabel>
     <FeaturedImg
       image={thumbnail}
       quote="A comfort zone is a beautiful place, but nothing ever grows there."
