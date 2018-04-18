@@ -6,6 +6,7 @@ import Header from '../components/Header'
 import CssBaseline from 'material-ui/CssBaseline'
 import './roboto-font.css'
 import './icb.css'
+import './root.css'
 
 import { createMuiTheme, MuiThemeProvider } from 'material-ui/styles'
 import teal from 'material-ui/colors/teal'

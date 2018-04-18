@@ -32,12 +32,13 @@ const UprightBuilders = props => (
       author="Theodore Roosevelt"
     />
     <Typography component="p" className={props.classes.textBlock}>
-      Michael Irwin is starting his own construction business, called Upright
-      Builders. Michael decided to approach our Computer Animation and Web
-      Design (CAWD) program and ask us if we could help with his website. Alex
-      Goodman and I happily agreed and began working on his website and logo.
-      Alex was in charge of graphic design aspects, whereas I worked on the more
-      technical side of things, by building a Wordpress theme.
+      Michael Irwin is starting his own construction business, called{' '}
+      <a href="http://uprightbuildersvt.com">Upright Builders</a>. Michael
+      decided to approach our Computer Animation and Web Design (CAWD) program
+      and ask us if we could help with his website. Alex Goodman and I happily
+      agreed and began working on his website and logo. Alex was in charge of
+      graphic design aspects, whereas I worked on the more technical side of
+      things, by building a Wordpress theme.
     </Typography>
     <Typography component="p" className={props.classes.textBlock}>
       This website is powered by a program called Wordpress, which allows easy

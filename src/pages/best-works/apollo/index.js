@@ -44,10 +44,10 @@ const Apollo = props => (
       however, the interface wasn’t really designed for music and I needed to
       pay for a YouTube Red subscription just to be able to listen to music with
       my phone’s screen off. Thus, I decided to create my own music interface,
-      one that acts like Spotify but retrieves songs from YouTube. I named it
-      Apollo, after the Greek god of music. This website can be run on the
-      desktop or phone and provides an easy-to-use interface for accessing your
-      favorite songs.
+      one that acts like Spotify but retrieves songs from YouTube. I named it{' '}
+      <a href="https://apollomusic.tk/">Apollo</a>, after the Greek god of
+      music. This website can be run on the desktop or phone and provides an
+      easy-to-use interface for accessing your favorite songs.
     </Typography>
     <Typography component="p" className={props.classes.textBlock}>
       In order to create this interface, I needed a few different things. For

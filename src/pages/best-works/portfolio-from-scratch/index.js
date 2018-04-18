@@ -32,11 +32,12 @@ const PortfolioFromScratch = props => (
       author="Unknown"
     />
     <Typography component="p" className={props.classes.textBlock}>
-      My best work by far would have to be my portfolio website. I feel like
-      this project accurately represents my talents as it’s one of the few
-      completed and elegant projects I’ve made. I built the entire site from the
-      ground up, applied all of my knowledge of coding into the project, and
-      learned some new aspects of web design.
+      My best work by far would have to be my{' '}
+      <a href="https://alexcardosi.me/">portfolio website</a>. I feel like this
+      project accurately represents my talents as it’s one of the few completed
+      and elegant projects I’ve made. I built the entire site from the ground
+      up, applied all of my knowledge of coding into the project, and learned
+      some new aspects of web design.
     </Typography>
     <Typography component="p" className={props.classes.textBlock}>
       I built this portfolio from the scratch: hand coding everything without
