@@ -6,6 +6,10 @@ import Typography from 'material-ui/Typography'
 const styles = theme => ({
   pageLabel: {
     backgroundColor: theme.palette.primary.main,
+    height: 100,
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
     color: 'white',
     padding: theme.spacing.unit,
     boxShadow: theme.shadows[1],
