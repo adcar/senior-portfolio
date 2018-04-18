@@ -13,7 +13,7 @@ const styles = theme => ({
     color: 'white',
     padding: theme.spacing.unit,
     boxShadow: theme.shadows[1],
-    marginBottom: theme.spacing.unit * 2
+    marginBottom: theme.spacing.unit * 5
   }
 })
 
