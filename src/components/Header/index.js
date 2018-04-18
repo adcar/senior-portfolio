@@ -83,9 +83,11 @@ class Header extends Component {
         <List className={classes.drawer}>
           <div>
             <ListItem>
-              <Typography variant="title" color="primary">
-                Senior Portfolio
-              </Typography>
+              <Link to="/" className={classes.link}>
+                <Typography variant="title" color="primary">
+                  Senior Portfolio
+                </Typography>
+              </Link>
             </ListItem>
             <Divider />
             <ListItem
