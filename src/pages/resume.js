@@ -15,7 +15,7 @@ const styles = theme => ({
 
 const Resume = props => (
   <div>
-    <PageLabel>Resume &amp; Cover Letter</PageLabel>
+    <PageLabel>Resume &amp; Cover Letter </PageLabel>
     <Typography
       component="h2"
       variant="display1"

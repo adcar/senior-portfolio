@@ -116,7 +116,11 @@ class Resume extends Component {
       <div className={classes.container}>
         <div className={classes.leftSideBar}>
           <div className={classes.sidebarInfo}>
-            <img src={profilePhoto} className={classes.profilePhoto} />
+            <img
+              src={profilePhoto}
+              className={classes.profilePhoto}
+              alt="Profile Photo"
+            />
             <Typography
               variant="display1"
               component="h1"

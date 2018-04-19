@@ -27,6 +27,9 @@ const styles = theme => ({
     maxWidth: 1000,
     margin: '0 auto',
     padding: theme.spacing.unit * 3
+  },
+  textBlock: {
+    paddingBottom: theme.spacing.unit
   }
 })
 
@@ -58,47 +61,49 @@ const IndexPage = props => (
       >
         My Path
       </Typography>
-      <Typography>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam maximus,
-        odio eget semper venenatis, magna ipsum interdum odio, vel eleifend arcu
-        risus eget quam. Aenean non purus metus. Donec semper at eros eu varius.
-        Interdum et malesuada fames ac ante ipsum primis in faucibus. In
-        hendrerit, nibh eget sagittis ultricies, mi sem viverra ante, quis
-        accumsan neque metus id leo. Nunc mattis sit amet ligula vel efficitur.
-        Morbi finibus eget orci in placerat. Morbi massa odio, ultrices eget
-        eros eu, auctor tempus orci. Phasellus sed lacinia lectus. Mauris sit
-        amet urna ut ligula vulputate rhoncus vel at neque. Duis pellentesque,
-        mauris vel consectetur vestibulum, arcu lacus elementum risus, eget
-        tempus risus eros condimentum lectus. In scelerisque varius justo sed
-        rutrum. Donec suscipit, mauris in faucibus tristique, eros justo dapibus
-        felis, sit amet vulputate erat velit sit amet turpis. Etiam viverra nunc
-        euismod arcu dictum, sit amet suscipit nunc tincidunt. Proin quis metus
-        et turpis vulputate vestibulum. Phasellus vehicula erat nec risus
-        fringilla mollis. Phasellus at eleifend dolor, non feugiat quam. Nulla
-        varius ornare vulputate. Donec faucibus pellentesque leo, sed maximus
-        ante porttitor quis. Nulla aliquet pharetra ipsum quis condimentum.
-        Proin vel finibus lectus. Nulla venenatis dolor aliquam, vestibulum
-        massa eget, tempus ligula. Sed vehicula vitae augue ac lobortis. In
-        cursus elementum pretium. Duis in metus viverra, efficitur magna vitae,
-        laoreet lacus. Cras massa sem, volutpat a ligula rhoncus, convallis
-        venenatis ipsum. Nunc vitae neque ut quam sagittis viverra efficitur nec
-        nisl. Donec imperdiet est vel lacinia tincidunt. Sed facilisis nisi quis
-        consectetur imperdiet. Maecenas lacus leo, ornare vel porta nec, aliquam
-        eu urna. Sed faucibus lobortis dolor quis finibus. Ut non neque vel
-        mauris elementum sodales. Donec porta, ex eget elementum aliquet, augue
-        massa ultricies diam, id efficitur purus dui quis eros. Duis at orci in
-        ligula ultrices congue. Proin cursus faucibus mi id auctor. Suspendisse
-        tristique eros bibendum semper consectetur. Integer faucibus lectus ut
-        sollicitudin tristique. Fusce ullamcorper nulla ante, vestibulum rhoncus
-        risus aliquet ut. Quisque at velit rutrum, blandit orci nec, hendrerit
-        erat. Sed vel leo ac sem congue feugiat quis quis quam. Donec tristique
-        metus id tellus tempus, vitae sodales felis gravida. Nullam mauris ante,
-        aliquet rhoncus felis sit amet, elementum bibendum purus. Suspendisse
-        nec auctor tellus. Vivamus a imperdiet mi. Integer at ornare erat, ac
-        hendrerit neque. Sed blandit sapien sit amet metus cursus, vitae posuere
-        dolor bibendum. Donec felis nulla, aliquam sit amet nisl sit amet,
-        posuere commodo lacus. Phasellus volutpat ornare aliquam. In hac
-        habitasse platea dictumst.
+      <Typography component="p" className={props.classes.textBlock}>
+        It’s important to choose your own path in life and in academics. I chose
+        to take control of my path by finding a program that was the right fit
+        for me. Joining the Center for Technology, Essex has led me down a path
+        of success; I will soon attend the Vermont Technical College (VTC), and
+        my end goal is to become a seasoned web developer with a solid career.
+      </Typography>
+      <Typography component="p" className={props.classes.textBlock}>
+        The decision to join CTE’s Computer Animation and Web Design (CAWD)
+        program was an easy one. I always had a passion for technology,
+        especially web design/development, so when I first discovered this
+        program I knew it’d be the perfect fit for me. CAWD allowed me to focus
+        on my own passion, rather than the standard high school studies. My
+        teachers and classmates have positively influenced my life by providing
+        me with academic and moral support when it comes to any difficulties or
+        hardships I might encounter.
+      </Typography>
+      <Typography component="p" className={props.classes.textBlock}>
+        Today, I’m a part of the Computer Animation and Web Design II program
+        and find myself enjoying it every day. I would describe myself as a very
+        hard worker and put in my full effort when attempting any project or
+        assignment I’m given. Reliability and initiative are the most important
+        worker traits of mine. Hard work is pointless if you’re not reliable for
+        deadlines or lack the initiative to accomplish your task. I find it’s
+        important to not only reliably and efficiently turn in assignments, but
+        also to take initiative when it comes to leadership roles.
+      </Typography>
+      <Typography component="p" className={props.classes.textBlock}>
+        I’ve already been accepted into VTC and hope to see myself graduate with
+        a Software Engineering degree. I will continue my efforts of staying on
+        top of assignments and putting in my maximum effort in order to graduate
+        with the highest GPA possible. After graduating, I would ideally want to
+        get a job as either a web developer or front-end developer of some kind.
+        My ideal workplace would be somewhere like GitHub or Google.
+      </Typography>
+      <Typography component="p" className={props.classes.textBlock}>
+        By taking control of my life, I was able to accomplish my goals thus
+        far, and will strive to do so in the future. Joining CAWD allowed to to
+        better enjoy my academic life. I’m able to focus on my own passion,
+        rather than a standard education. Once I graduate and enroll in VTC, I’m
+        sure I’ll be right at home once again, as my major aligns perfectly with
+        my passion. Choosing your own path is essential; your academic path is
+        no exception.
       </Typography>
       <Typography>
         Also, check out my <a href="https://alexcardosi.me/">portfolio</a>
