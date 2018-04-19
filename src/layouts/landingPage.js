@@ -25,7 +25,9 @@ const TemplateWrapper = ({ children }) => (
           { name: 'description', content: 'Senior Portfolio' },
           { name: 'keywords', content: 'school, portfolio' }
         ]}
-      />
+      >
+        <html lang="en" />
+      </Helmet>
       <div
         style={{
           height: '100%',
