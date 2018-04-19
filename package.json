@@ -5,6 +5,7 @@
   "author": "Alexander Cardosi <alexanderdcardosi@gmail.com>",
   "dependencies": {
     "gatsby": "^1.9.243",
+    "gatsby-cli": "^1.1.50",
     "gatsby-link": "^1.6.40",
     "gatsby-plugin-manifest": "^1.0.17",
     "gatsby-plugin-offline": "^1.0.15",

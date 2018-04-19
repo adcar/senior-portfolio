@@ -30,6 +30,7 @@ const BestWorks = props => {
       media={work.src}
       title={work.name}
       link={`/best-works/${work.name.toLowerCase().replace(/\ /g, '-')}`}
+      description={work.desc}
     />
   ))
 
