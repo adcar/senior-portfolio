@@ -105,9 +105,6 @@ const IndexPage = props => (
         my passion. Choosing your own path is essential; your academic path is
         no exception.
       </Typography>
-      <Typography>
-        Also, check out my <a href="https://alexcardosi.me/">portfolio</a>
-      </Typography>
     </div>
   </div>
 )
