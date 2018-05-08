@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import Typography from 'material-ui/Typography'
 import { withStyles } from 'material-ui/styles'
 import Link from 'gatsby-link'
-import { apollo as thumbnail } from '../../../img'
+import { euterpe as thumbnail } from '../../../img'
 import FeaturedImg from '../../../components/FeaturedImg/'
 import PageLabel from '../../../components/PageLabel'
 
@@ -16,9 +16,9 @@ const styles = theme => ({
     paddingBottom: theme.spacing.unit
   }
 })
-const Apollo = props => (
+const Euterpe = props => (
   <div>
-    <PageLabel>Apollo</PageLabel>
+    <PageLabel>Euterpe</PageLabel>
 
     <FeaturedImg
       image={thumbnail}
@@ -39,8 +39,8 @@ const Apollo = props => (
       pay for a YouTube Red subscription just to be able to listen to music with
       my phone’s screen off. Thus, I decided to create my own music interface,
       one that acts like Spotify but retrieves songs from YouTube. I named it{' '}
-      <a href="https://apollomusic.tk/">Apollo</a>, after the Greek god of
-      music. This website can be run on the desktop or phone and provides an
+      <a href="https://euterpe.cf/">Euterpe</a>, after the Greek god of music.
+      This website can be run on the desktop or phone and provides an
       easy-to-use interface for accessing your favorite songs.
     </Typography>
     <Typography component="p" className={props.classes.textBlock}>
@@ -74,7 +74,7 @@ const Apollo = props => (
       reading a book on it, without actually engaging).
     </Typography>
     <Typography component="p" className={props.classes.textBlock}>
-      Building Apollo helped me understand and utilize various APIs, React, and
+      Building Euterpe helped me understand and utilize various APIs, React, and
       Material-UI. I can confidently say I’ve created a functional and useful
       web application in React. I can show this off to friends, family, and (of
       course) use it myself. Once I had the strong motivation and roadmap to
@@ -86,7 +86,7 @@ const Apollo = props => (
   </div>
 )
 
-Apollo.propTypes = {
+Euterpe.propTypes = {
   classes: PropTypes.object.isRequired
 }
-export default withStyles(styles)(Apollo)
+export default withStyles(styles)(Euterpe)

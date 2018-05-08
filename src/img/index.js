@@ -7,9 +7,9 @@ import skillsCert from './skillsCert.jpg'
 
 import portfolioFromScratch from './portfolio-from-scratch.jpg'
 import uprightBuilders from './uprightBuilders.jpg'
-import apollo from './apollo.jpg'
+import euterpe from './euterpe.jpg'
 
-export { portfolioFromScratch, uprightBuilders, apollo }
+export { portfolioFromScratch, uprightBuilders, euterpe }
 
 export const awards = [
   {
@@ -52,8 +52,8 @@ export const bestWorks = [
     src: uprightBuilders
   },
   {
-    name: 'Apollo',
+    name: 'Euterpe',
     desc: 'Music streaming website built with React',
-    src: apollo
+    src: euterpe
   }
 ]
