@@ -39,8 +39,8 @@ const Euterpe = props => (
       pay for a YouTube Red subscription just to be able to listen to music with
       my phone’s screen off. Thus, I decided to create my own music interface,
       one that acts like Spotify but retrieves songs from YouTube. I named it{' '}
-      <a href="https://euterpe.cf/">Euterpe</a>, after the Greek god of music.
-      This website can be run on the desktop or phone and provides an
+      <a href="https://euterpe.cf/">Euterpe</a>, after the Greek goddess of
+      music. This website can be run on the desktop or phone and provides an
       easy-to-use interface for accessing your favorite songs.
     </Typography>
     <Typography component="p" className={props.classes.textBlock}>
