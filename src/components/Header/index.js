@@ -24,7 +24,10 @@ const styles = theme => ({
     flex: 1
   },
   title: {
-    color: theme.palette.primary.main
+    color: theme.palette.primary.main,
+    display: 'inline-flex',
+    justifyContent: 'flex-start',
+    alignItems: 'center'
   },
   menuButton: {
     marginLeft: -12,
@@ -54,6 +57,12 @@ const styles = theme => ({
 
   drawer: {
     width: 250
+  },
+  siteTitle: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: 'red'
   }
 })
 
@@ -146,11 +155,11 @@ class Header extends Component {
             >
               <MenuIcon className={classes.teal} />
             </IconButton>
-            <Link to="/" className={[classes.link, classes.flex].join(' ')}>
-              <Typography
-                variant="title"
-                className={[classes.flex, classes.title].join(' ')}
-              >
+            <Link
+              to="/"
+              className={[classes.link, classes.flex, classes.title].join(' ')}
+            >
+              <Typography variant="title" color="primary">
                 Senior Portfolio
               </Typography>
             </Link>

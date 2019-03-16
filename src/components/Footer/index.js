@@ -10,7 +10,7 @@ const styles = theme => ({
     height: 50,
     minHeight: 50,
     display: 'flex',
-    jusitfyContent: 'center',
+    justifyContent: 'center',
     alignItems: 'center',
     width: '100%'
   },
