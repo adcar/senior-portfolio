@@ -69,8 +69,8 @@ const IndexPage = props => (
         my end goal is to become a seasoned web developer with a solid career.
       </Typography>
       <Typography component="p" className={props.classes.textBlock}>
-        The decision to join CTE’s Computer Animation and Web Design (CAWD)
-        program was an easy one. I always had a passion for technology,
+        The great decision to join CTE’s Computer Animation and Web Design
+        (CAWD) program was an easy one. I always had a passion for technology,
         especially web design/development, so when I first discovered this
         program I knew it’d be the perfect fit for me. CAWD allowed me to focus
         on my own passion, rather than the standard high school studies. My
